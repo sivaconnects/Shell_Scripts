@@ -1,2 +1,2 @@
-# shell_scripts
+# shell-scripts
 Linux &amp; AIX Shell Scripts
