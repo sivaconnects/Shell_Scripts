@@ -6,8 +6,8 @@ servers_list="/admin/scripts1/siva/activities/2016t_ips.txt"
 
 while read -r i; do
     echo "Processing Server $i"
-
     ssh -q root@"$i" << EOF 2>/dev/null
+    
 # Rename old ServerDetails if exists
 if [ -f /tmp/\$(uname -n)_ServerDetails ]; then
     mv "/tmp/\$(uname -n)_ServerDetails" "/tmp/\$(uname -n)_ServerDetails_$dt"
