@@ -1,5 +1,13 @@
 #!/bin/ksh
 
+# ==============================================================================
+# Description: This script connects to a list of AIX servers and renames the old server
+# details file and Runs a script to collect impotant command outputs and then finally copies 
+# the newly generated outputs file into a given path
+# Author: Siva Prasad
+# Date: 2025-10-25
+# ==============================================================================
+
 dt=$(date +"%d%m%Y")
 path="/perffs/062016T_HW_ACTIVITY_26102025/before"
 servers_list="/admin/scripts1/siva/activities/2016t_ips.txt"
